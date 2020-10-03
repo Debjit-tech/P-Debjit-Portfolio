@@ -1,0 +1,100 @@
+#works{margin-bottom: 160px;}
+.limit4{max-width: 1000px;margin: auto;}
+
+.startstate{
+    color: grey;
+    font-size: 14px;
+    margin-top: 80px;
+}
+.subnavbar{
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: 28% 28% 28%;
+    grid-gap: 50px;
+    justify-content: space-between;
+}
+
+.webdesigns,.otherdesigns{
+    width: 100%;
+    padding: 50px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-gap: 20px;
+    justify-content: center;
+}
+
+.logodesigns{
+    width: 100%;
+    padding: 50px;
+    display: grid;
+    grid-template-columns: 23% 23% 23% 23%;
+    grid-gap: 20px;
+    justify-content: center;
+}
+
+.workcard,.othercards,.logocards{
+    width: 100%;
+    background: #2e2e2e67;
+    padding: 20px;
+    box-sizing: border-box;
+    transition: 0.5s;
+    border-radius: 4px;
+    user-select: none;
+}
+
+.wpic{width: 100%; display: flex;align-items: center;justify-content: center}
+.wpic img{width: 100%;user-select: none;}
+.workcard p{
+    color: grey;
+    margin-top: 14px;
+    font-size: 12px;
+    text-transform: uppercase;
+    user-select: none;
+}
+
+.othercards p, .logocards p{
+    color: grey;
+    margin-top: 16px;
+    font-size: 14px;
+    text-transform: uppercase;
+    user-select: none;
+}
+
+.visitbtn2{
+    padding: 12px 20px;
+    font-size: 12px;
+    text-transform: uppercase;
+    color: white;
+    margin: 20px auto 0 auto;
+    border-width: 2px;
+    border-style: solid;
+    border-color: #FF005C;
+    text-align: center;
+    border-radius: 4px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    user-select: none;
+    z-index: 3;
+}
+.layer4{
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    height: 0;
+    width: 100%;
+    background: #FF005C;
+    transition: 0.5s;
+    z-index: -1;
+}
+
+
+.logocards img{width: 100%;transition: 0.5s;}
+.samplepic img{width: 100%;}
+
+
+
+/*--------------------------------------------------------------Hover Effect------------------------------------------------------------------*/
+
+.visitbtn2:hover .layer4{height: 100%;}

@@ -1,0 +1,194 @@
+.preloader{
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    background: #040420;
+    z-index: 999999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.preloader img{
+    width: 10%;
+}
+
+#header{
+    min-height: 100vh;
+    max-height: 100vh;
+    height: 100vh;
+    width: 100vw;
+    background-image: url("Backgrounds/headerbg.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+
+.overlay{
+    min-height: 100vh;
+    max-height: 100vh;
+    width: 100vw;
+    background: #040420c7;
+}
+
+.navbar{
+    max-width: 1400px;
+    margin: auto;
+    padding: 40px 20px;
+    display: flex;
+    align-items: center;
+}
+
+.logo{display: flex;justify-content: center;align-items: center;width: 160px}
+.logo img{width: 100%;user-select: none;user-select: none;}
+
+
+
+.navs{flex-basis: 90%;text-align: right;align-items: center;user-select: none;}
+.navs label{border-radius: 10px;padding: 10px;display: none;}
+.navs label img{width: 20px;}
+#toggle{display: none;}
+.navlist{list-style-type: none;}
+.navlist li{display: inline;}
+.link{color: white; font-size: 14px; padding: 10px 20px;text-decoration: none;transition: 0.5s;border-radius: 40px;user-select: none;}
+
+.contactlink{
+    border-width: 2px;
+    border-color: white;
+    border-radius: 40px;
+    border-style: solid;
+}
+
+
+.biglogo{max-width: 480px;margin: auto;transform: translateY(28vh);}
+.biglogo figure{max-width: 480px;text-align: center;}
+.biglogo figure img{width: 100%;user-select: none;}
+figcaption{overflow: hidden;}
+.caption{
+    color: white;
+    letter-spacing: 14px;
+    font-size: 16px;
+    margin-top: 10px;
+    user-select: none;
+    text-transform: uppercase;
+}
+.last{
+    color: white;
+    letter-spacing: 0;
+    font-size: 16px;
+    margin-top: 10px;
+    user-select: none;
+    text-transform: uppercase;
+}
+
+
+
+.topbtn{
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    right: 0;
+    bottom: 0;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    z-index: 999;
+    transition: 0.5s;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(60px);
+    border-radius: 100%;
+}
+.topbtn a img{
+    width: 100%;
+}
+
+.visible{
+    transform: translateY(0);
+    opacity: 1;
+    visibility: visible;
+}
+
+
+
+/*--------------------------------------------------------------Hover Effect------------------------------------------------------------------*/
+
+
+.link:hover{
+    background: #FF005C;
+    margin: 0 10px;
+    border-radius: 40px;
+}
+
+
+
+
+
+/*--------------------------------------------------------------Responsive CSS------------------------------------------------------------------*/
+
+
+@media (max-width: 760px){
+
+    .navs{position: relative;}
+    .navs label{display: block;cursor: pointer; }
+
+    .navlist{
+        display: none;
+        position: absolute;
+        z-index: 80000;
+        right: 0;
+        margin: 14px 12px 0 0;
+    }
+    
+
+    .navlist li{
+        background-color: #040420;
+        text-align: center;
+        padding: 16px 20px;
+        display: block;
+        transition: 0.3s;
+        font-size: 10px;
+        border-width: 1px;
+        border-style: solid;
+        border-color: white;
+    }
+
+    #toggle:checked + .navlist{display: block;}
+
+    .contactlink{
+        color: #FF005C;
+        border: none;
+    }
+
+
+    .link:hover{
+        background-color: transparent;
+        margin: 0;
+        border-radius: 0;
+    }
+
+    .navlist li:hover{background-color: #FF005C;}
+    .navlist li:hover .contactlink{color: white;}
+
+    .biglogo{max-width: 200px;margin: auto;}
+
+    .caption,.last{letter-spacing: 4px; font-size: 11px;}
+    .topbtn{
+        width: 40px;
+        height: 40px;
+        right: 0;
+        bottom: 0;
+        margin-right: 20px;
+        margin-bottom: 20px;
+    }
+
+}
+
+@media (max-width: 320px){
+    .topbtn{
+        width: 30px;
+        height: 30px;
+        right: 0;
+        bottom: 0;
+        margin-right: 20px;
+        margin-bottom: 20px;
+    }
+}

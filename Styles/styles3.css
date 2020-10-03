@@ -1,0 +1,79 @@
+#services{margin-bottom: 160px;}
+
+.limit2{max-width: 1000px;margin: auto;}
+
+.scontainer{
+    width: 100%;
+    margin: 40px auto 0 auto;
+    display: grid;
+    grid-template-columns: 32% 32% 32%;
+    grid-row-gap: 16px;
+    justify-content: space-between;
+    max-width: 800px;
+}
+
+.cards{
+    width: 100%;
+    background: #2e2e2e67;
+    padding: 20px;
+    box-sizing: border-box;
+    transition: 0.5s;
+    border-radius: 4px;
+    user-select: none;
+    position: relative;
+}
+.spic{width: 100%; display: flex;align-items: center;justify-content: center;}
+.cards img{width: 100%;user-select: none;}
+.cards h4{color: grey;margin-top: 10px;font-size: 16px;text-transform: uppercase;user-select: none;}
+.contactbtn2{
+    padding: 12px 20px;
+    font-size: 12px;
+    text-transform: uppercase;
+    color: white;
+    margin: 20px auto 0 auto;
+    border-width: 2px;
+    border-style: solid;
+    border-color: #FF005C;
+    text-align: center;
+    border-radius: 4px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    user-select: none;
+    z-index: 3;
+}
+
+.detailslayer{
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 0;
+    background: #FF005C;
+    transition: 0.5s;
+    overflow: hidden;
+    border-radius: 4px 4px 0 0;
+}
+
+.sdetails{
+    margin-top: 100px;
+    color: #8E8E8E;
+    font-size: 12px;
+}
+
+.detailslayer p{
+    color: white;
+    font-size: 13px;
+    margin: 14px;
+    visibility: hidden;
+}
+
+
+/*--------------------------------------------------------------Hover Effect------------------------------------------------------------------*/
+
+
+.contactbtn2:hover .layer{height: 100%;}
+.cards:hover{background: #00142e;transform: scale(1.6);}
+.cards:hover .detailslayer{height: 76%;}
+.cards:hover .detailslayer p{visibility: visible;}

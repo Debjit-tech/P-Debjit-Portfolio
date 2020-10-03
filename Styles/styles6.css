@@ -1,0 +1,216 @@
+#contact{margin-top: 160px;}
+.limit5{max-width: 1000px;min-height: 668px;margin: auto;}
+
+
+.form{
+    max-width: 1000px;
+    margin: 40px auto 0 auto;
+    display: grid;
+    grid-template-columns: 48% 48%;
+    grid-gap: 20px;
+    justify-content: space-between;
+}
+
+.messageform{
+    max-width: 1000px;
+    min-height: 148px;
+    margin-top: 20px;
+}
+
+.mobile-div, .iti{width: 100%;}
+
+input, textarea{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 20px 14px;
+    border-radius: 4px;
+    background: #00142e;
+    color: #ffffff;
+    border: 0;
+    outline: 0;
+    border-left: 6px;
+    border-bottom: 0;
+    border-top: 0;
+    border-right: 0;
+    border-color:  #FF005C;
+    border-style: solid;
+    font-size: 13px;
+}
+
+.iti__flag-container{margin-left: 10px;}
+.iti__country-list{
+    background: #00142e; 
+    color: #ffffff;
+    min-width: 440px;
+    margin: 0 10px;
+    overflow-x: hidden;
+    font-size: 13px;
+}
+
+.iti__country{transition: 0.5s;padding: 10px 14px;}
+
+.select-box{
+    width: 100%;
+    max-height: 55.2px;
+    box-sizing: border-box;
+    padding: 20px 14px;
+    border-radius: 4px;
+    background: #00142e;
+    border-left: 6px;
+    border-bottom: 0;
+    border-top: 0;
+    border-right: 0;
+    border-color:  #FF005C;
+    border-style: solid;
+    position: relative;
+    cursor: pointer;
+    user-select: none;
+}
+
+
+.dropdown-select{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    font-size: 13px;
+    color: rgb(136, 136, 136);
+}
+
+.trigger{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+
+.list-options{
+    margin-top: 14px;
+    position: absolute;
+    display: block;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: #00142e;
+    transition: all 0.5s;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    border: #ffffff;
+    border-width: 1px;
+    border-style: solid;
+    z-index: 4;
+}
+
+
+.dropdown-select.open .list-options {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: all;
+}
+
+
+.option{
+    position: relative;
+    display: block;
+    padding: 10px 14px;
+    font-size: 13px;
+    color: #ffffff;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+
+.option.selected {
+    color: #ffffff;
+}
+
+.arrow {
+    position: relative;
+    height: 15px;
+    width: 15px;
+    transform: scale(0.6);
+}
+.arrow::before, .arrow::after {
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    width: 0.15rem;
+    height: 100%;
+    transition: all 0.5s;
+}
+.arrow::before {
+    left: -5px;
+    transform: rotate(45deg);
+    background-color: #394a6d;
+}
+.arrow::after {
+    left: 5px;
+    transform: rotate(-45deg);
+    background-color: #394a6d;
+}
+.open .arrow::before {
+    left: -5px;
+    transform: rotate(-45deg);
+}
+.open .arrow::after {
+    left: 5px;
+    transform: rotate(45deg);
+}
+
+
+
+.submitbtn{
+    max-width: 160px;
+    padding: 12px 20px;
+    font-size: 15px;
+    text-transform: uppercase;
+    color: white;
+    margin: 60px auto 0 auto;
+    border-width: 2px;
+    border-style: solid;
+    border-color: #FF005C;
+    text-align: center;
+    border-radius: 4px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    user-select: none;
+    z-index: 3;
+}
+.layer5{
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    height: 0;
+    width: 100%;
+    background: #FF005C;
+    transition: 0.5s;
+    z-index: -1;
+}
+
+.copyright{
+    color: #ffffff;
+    background: black;
+    padding: 40px;
+    text-align: center;
+    align-items: center;
+    font-size: 14px;
+    width: 100%;
+    overflow: hidden;
+}
+
+/*--------------------------------------------------------------Hover Effect------------------------------------------------------------------*/
+
+
+
+.option:hover{background: #FF005C;}
+.headline:hover{background: grey;}
+
+.submitbtn:hover .layer5{height: 100%;}
+.iti__country:hover{background: #FF005C;}
+
+
+
+

@@ -1,0 +1,368 @@
+#about{margin: 160px 0;}
+.limit{max-width: 1000px;margin: auto;min-height: 1370px;clip: rect(0px 900px 1260px 0px);}
+
+.title{width: 100%; text-align: center;}
+
+.title p{color: rgb(255, 255, 255);font-size: 28px;text-transform: uppercase;}
+
+.underline{
+    max-width: 60px;
+    height: 5px;
+    border-radius: 20px;
+    background-color: #FF005C;
+    margin: 10px auto;
+}
+
+
+.intro{
+    font-size: 64px;
+    color: rgb(255, 255, 255);
+    margin-bottom: 20px;
+    margin-top: 100px;
+}
+
+.location{display: flex; align-items: center;margin: 16px 0;}
+.icon{width: 14px;}
+.icon img{width: 100%;user-select: none;}
+.location p{font-size: 16px;color: #8E8E8E;margin-left: 8px;}
+
+
+.bio{
+    display: grid;
+    grid-template-columns: 60% 40%;
+    grid-gap: 30px;
+    align-items: center;
+    margin-top: 40px;
+}
+.para p{color: grey; font-size: 14px; line-height: 20px;}
+.paralink{color: cyan;text-decoration: none;}
+.face{display: flex;justify-content: center;align-items: center;}
+.face img{width: 80%;user-select: none;}
+
+
+.abtnavbar{
+    margin-top: 140px;
+    display: grid;
+    grid-template-columns: 28% 28% 28%;
+    grid-gap: 14px;
+    justify-content: space-between;
+}
+
+.worksnavbar{
+    margin-top: 140px;
+    display: grid;
+    grid-template-columns: 28% 28% 28%;
+    grid-gap: 50px;
+    justify-content: space-between;
+}
+
+.inactive{
+    padding: 14px 20px;
+    color: white;
+    font-size: 14px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: #FF005C;
+    border-radius: 40px;
+    text-align: center;
+    align-items: center;
+    transition: 0.5s;
+    cursor: pointer;
+    user-select: none ;
+}
+
+.active{
+    background: #FF005C;
+    font-family: rubik-bold;
+    font-size: 14px;
+    padding: 14px 20px;
+    color: white;
+    border-width: 2px;
+    border-style: solid;
+    border-color: #FF005C;
+    border-radius: 40px;
+    text-align: center;
+    align-items: center;
+    transition: 0.5s;
+    cursor: pointer;
+    user-select: none ;
+}
+
+#navpages,#navpages2{
+    display: flex;
+    align-items: center;
+    margin-top: 80px;
+    border-width: 2px;
+    border-color: #8E8E8E;
+    border-style: solid;
+    overflow: hidden;
+}
+
+.hrrates{width: 100%;padding: 50px}
+.cols{
+    display: grid;
+    grid-template-columns: 48% 48%; 
+    grid-gap: 20px;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+.left-col, .right-col{background: #2e2e2e67;border-radius: 4px;padding: 30px;text-align: center;}
+
+.price{color: #FF005C;font-size: 40px;font-family: rubik-bold;}
+.type{color: #8E8E8E;font-size: 16px;text-transform: uppercase;margin-top: 14px;}
+.details{color: #8E8E8E;font-size: 12px;margin-top: 20px;}
+.contactbtn{
+    padding: 10px 20px;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: white;
+    margin: 40px auto 0 auto;
+    border-width: 2px;
+    border-style: solid;
+    border-color: #FF005C;
+    text-align: center;
+    border-radius: 4px;
+    cursor: pointer;
+    max-width: 100px;
+    position: relative;
+    overflow: hidden;
+    user-select: none;
+    z-index: 3;
+}
+
+.note{font-size: 10px;color: #8E8E8E;margin-top: 60px;}
+
+.layer{
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    height: 0;
+    width: 100%;
+    background: #FF005C;
+    transition: 0.5s;
+    z-index: -1;
+}
+
+
+.recenteduc{width: 100%;padding: 50px;}
+
+.content{
+    width: 100%;
+    display: flex;
+}
+
+.edudetails{
+    flex-basis: 50%;
+}
+
+.showcertificates{
+    flex-basis: 50%;
+    color: white;
+    max-height: 320px;
+    overflow-y: scroll;
+}
+
+
+.ct{
+    padding: 10px 14px;
+    border-radius: 4px;
+    border-color: #FF005C;
+    border-style: solid;
+    border-width: 2px;
+    margin: 0 20px 14px 20px;
+    display: flex;
+    align-items: center;
+}
+
+.ctdetails{flex-basis: 60%;}
+
+#course{font-size: 20px;}
+#org{color: cyan; font-size: 10px;line-height: 16px;text-decoration: none;}
+#date{color: grey; font-size: 10px;line-height: 12px;}
+#credential{color: #FF005C; font-size: 14px;margin-top: 20px;text-decoration: none;}
+
+
+.courseimg{width: 100%; flex-basis: 40%;display: flex;justify-content: end;}
+.courseimg img{width: 32%;margin-right: 20px;}
+
+
+
+
+
+
+
+.degree{color: #FF005C;font-size: 40px;font-family: rubik-bold;}
+.year{color: #8E8E8E;font-size: 12px;margin-top: 8px;}
+.t1{color: #8E8E8E;text-transform: uppercase;font-size: 20px;margin-top: 40px;}
+.n1{color: #ffffff; font-size: 13px;margin-top: 14px;}
+
+.t2{color: #8E8E8E;text-transform: uppercase;font-size: 20px;margin-top: 40px;}
+.n2{color: #ffffff; font-size: 13px;margin-top: 14px;}
+
+.location2{display: flex; align-items: center;margin: 10px 0;}
+.icon2{width: 12px;}
+.icon2 img{width: 100%;user-select: none;}
+.location2 p{font-size: 14px;color: #8E8E8E;margin-left: 8px;}
+
+
+.socialaccs{width: 100%;padding: 50px;}
+.accounts{
+    display: grid;
+    grid-template-columns: 32% 32% 32%; 
+    grid-gap: 10px;
+    justify-content: space-between;
+}
+
+.accs{
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: #2e2e2e67;
+    border-radius: 4px;
+}
+
+.accs img{width: 60px; filter: grayscale(100);margin: 0 auto 10px auto;}
+.accs p{color: grey; font-size: 14px;margin-top: 20px;}
+
+
+.visitbtn{
+    width: 100%;
+    padding: 10px 20px;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: white;
+    margin: 30px auto 0 auto;
+    border-width: 2px;
+    border-style: solid;
+    border-color: #FF005C;
+    text-align: center;
+    border-radius: 4px;
+    cursor: pointer;
+    max-width: 100px;
+    position: relative;
+    overflow: hidden;
+    user-select: none;
+    z-index: 3;
+}
+
+.layer1{
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    height: 0;
+    width: 100%;
+    background: #FF005C;
+    transition: 0.5s;
+    z-index: -1;
+}
+
+
+.everything{
+    width: 100%;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    display: none;
+}
+
+.everything div{
+    margin: 6px 0;
+}
+
+/*--------------------------------------------------------------Hover Effect------------------------------------------------------------------*/
+
+
+.contactbtn:hover .layer{height: 100%;}
+.visitbtn:hover .layer1{height: 100%;}
+.inactive:hover{background: #ff005d70;}
+
+
+
+
+
+/*--------------------------------------------------------------Responsive CSS------------------------------------------------------------------*/
+
+
+
+@media (max-width: 320px){
+
+
+    #about{margin: 60px 0;}
+    .limit{max-width: 280px;margin: auto;min-height: 0;}
+    .title p{font-size: 16px;}
+    .underline{width: 40px;height: 3px;}
+    .intro{font-size: 38px;margin-top: 40px;}
+    .icon{width: 12px;}
+    .location p{font-size: 14px;}
+    .bio{display: flex;flex-direction: column;}
+    .para{order: 2;}
+    .para p{font-size: 12px;}
+    .face{order: 1;}
+
+    .abtnavbar,#navpages{display: none;}
+    .inactive,.active{
+        font-size: 12px;
+        padding: 8px;
+        overflow: hidden;
+        border-radius: 4px;
+    }
+
+    .everything{display: flex;}
+    .hrrates, .recenteduc, .socialaccs{display: none; margin: auto;padding: 0;}
+    .cols{width: 100%;display: flex; flex-direction: column;;margin:auto}
+    .left-col, .right-col{display: flex;flex-direction: column;}
+    .details{margin-bottom: 20px;}
+    .contactbtn{
+        font-size: 12px;
+        max-width: none;
+        margin: 0;
+        color: white;
+        background-color: #FF005C;
+    }
+    .note{margin-top: 10px;}
+
+
+    .content{flex-direction: column;}
+
+
+    .degree{font-size: 30px}
+    .year{font-size: 8px}
+    .t1{font-size: 16px}
+    .n1{font-size: 12px}
+    .t2{font-size: 16px;margin-top: 30px;}
+    .n2{font-size: 13px;margin-top: 12px;margin-bottom: 20px;}
+    .icon2{width: 10px;}
+    .location2 p{font-size: 10px}
+
+
+    .accounts{display: grid;grid-template-columns: 50% 50%;justify-content: center;}
+    .visitbtn{
+        padding: 6px 0;
+        font-size: 12px;
+        color: white;
+        margin: 20px 0 0 0;
+        background-color: #FF005C;
+        max-width: none;
+        border-radius: 2px;
+    }
+
+    .accs{
+        padding: 20px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background: #2e2e2e67;
+    }
+    
+    .accs img{width: 50px; filter: grayscale(100);margin: 0 auto 10px auto;}
+    .accs p{color: grey; font-size: 11px;margin-top: 14px;}
+
+
+}

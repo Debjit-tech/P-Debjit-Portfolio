@@ -127,7 +127,7 @@ figcaption{overflow: hidden;}
 /*--------------------------------------------------------------Responsive CSS------------------------------------------------------------------*/
 
 
-@media (max-width: 760px){
+@media only screen and (max-width: 760px){
 
     .navs{position: relative;}
     .navs label{display: block;cursor: pointer; }
@@ -185,7 +185,7 @@ figcaption{overflow: hidden;}
 
 }
 
-@media (max-width: 320px){
+@media only screen and (max-width: 320px){
     .topbtn{
         width: 30px;
         height: 30px;

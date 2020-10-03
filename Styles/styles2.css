@@ -309,7 +309,7 @@
     .abtnavbar,#navpages{display: none;}
     .inactive,.active{
         font-size: 12px;
-        padding: 8px;
+        padding: 12px 8px;
         overflow: hidden;
         border-radius: 4px;
     }

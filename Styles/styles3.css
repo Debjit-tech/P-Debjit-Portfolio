@@ -77,3 +77,18 @@
 .cards:hover{background: #00142e;transform: scale(1.6);}
 .cards:hover .detailslayer{height: 76%;}
 .cards:hover .detailslayer p{visibility: visible;}
+
+
+/*--------------------------------------------------------------Responsive CSS------------------------------------------------------------------*/
+
+@media only screen and (max-width: 760px){
+    .limit2{margin: 0 20px}
+    .scontainer{grid-template-columns: 50% 50%;grid-gap: 10px;margin: 0;padding: 0;}
+    .contactbtn2{
+        padding: 12px 12px;
+        font-size: 10px;
+        margin: 20px auto 0 auto;
+    }
+
+    .cards h4{font-size: 12px;}
+}

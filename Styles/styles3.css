@@ -85,8 +85,8 @@
 @media only screen and (max-width: 760px){
     .limit2{margin: 0 20px; padding: 0;}
     .scontainer{
-        grid-template-columns: 50% 50%;
-        grid-gap: 10px;
+        grid-template-columns: 48% 48%;
+
         justify-content: center;
         margin: 0;
         padding: 0;

@@ -86,7 +86,7 @@
     .limit2{margin: 0 20px; padding: 0;}
     .scontainer{
         grid-template-columns: 46% 46%;
-        grid-gap: 4px;
+        grid-gap: 10px;
         justify-content: center;
         margin: 0;
         padding: 0;

@@ -44,8 +44,8 @@
 
 
 .navs{flex-basis: 90%;text-align: right;align-items: center;user-select: none;}
-.navs label{border-radius: 10px;padding: 10px;display: none;}
-.navs label img{width: 20px;}
+.navs label{border-radius: 10px;padding: 10px;display: none;user-select: none;}
+.navs label img{width: 20px;user-select: none;}
 #toggle{display: none;}
 .navlist{list-style-type: none;}
 .navlist li{display: inline;}
@@ -96,9 +96,11 @@ figcaption{overflow: hidden;}
     visibility: hidden;
     transform: translateY(60px);
     border-radius: 100%;
+    user-select: none;
 }
 .topbtn a img{
     width: 100%;
+    user-select: none;
 }
 
 .visible{
@@ -178,6 +180,7 @@ figcaption{overflow: hidden;}
         bottom: 0;
         margin-right: 20px;
         margin-bottom: 20px;
+        user-select: none;
     }
 
 }

@@ -24,6 +24,8 @@
 .spic{width: 100%; display: flex;align-items: center;justify-content: center;}
 .cards img{width: 100%;user-select: none;}
 .cards h4{color: grey;margin-top: 10px;font-size: 16px;text-transform: uppercase;user-select: none;}
+
+
 .contactbtn2{
     padding: 12px 20px;
     font-size: 12px;
@@ -83,6 +85,7 @@
 
 
 @media only screen and (max-width: 760px){
+    #services{margin-bottom: 40px;}
     .limit2{margin: 0 20px; padding: 0;}
     .scontainer{
         grid-template-columns: 50% 50%;
@@ -91,11 +94,29 @@
         margin: 0;
         padding: 0;
     }
+
+    .cards{position: relative;}
     .contactbtn2{
         padding: 12px 12px;
         font-size: 10px;
-        margin: 20px auto 0 auto;
+        position: absolute;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        border-radius: 0 0 4px 4px;
+        border-width: 0;
+        background-color: #FF005C;
     }
+    .layer{display: none;}
+    .cards h4{font-size: 12px;margin-bottom: 30px;}
+    .detailslayer{background-color: #00142e;display: none;}
+    .detailslayer p{font-size: 10px;margin: 10px;}
+    .sdetails{margin-top: 40px;}
 
-    .cards h4{font-size: 12px;}
+
+    .cards:hover .detailslayer{height: 0;}
+    .cards:hover .detailslayer p{visibility: hidden;}
+
+    .cards:active .detailslayer{height: 80%;}
+    .cards:active .detailslayer p{visibility: visible;}
 }
